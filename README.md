@@ -1,2 +1,2 @@
-# project-setup
-Create a folder &amp; repository for a coding project
+# Development
+This project is built using [Python](https://www.python.org/). It uses pipenv for managing dependencies.
