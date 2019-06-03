@@ -9,7 +9,7 @@ path = "/Users/andrew.cathcart/dev/python/"
 # specify username & pass3ord or use personal access token generated at https://github.com/settings/tokens
 username = ""
 password = ""
-token = ""  # PERSONAL_ACCESS_TOKEN
+token = PERSONAL_ACCESS_TOKEN
 
 
 def create_project():
