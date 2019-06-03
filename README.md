@@ -1,6 +1,6 @@
-## project-setup
+# project-setup
 
-# Description
+## Description
 This project is built using [Python3](https://www.python.org/download/releases/3.0/). 
 
 It uses [Pipenv](https://docs.pipenv.org/en/latest/) for managing dependencies.
@@ -9,7 +9,7 @@ It currently only supports MacOS.
 
 It creates a project folder at the specified destination, creates a git repository with the project name, sets the upstream, commits a README.md & finally opens the project in VSCode.
 
-# Installation
+## Installation
 `git clone "git@github.com:AndrewCathcart/project-setup.git"`
 
 `cd project-setup`
@@ -26,5 +26,5 @@ If you have Two Factor Authentication setup on your Github account you'll need t
 
 Otherwise simply alter the username & password string inside create_project.py
 
-# Usage
+## Usage
 `create_project <project_name>`
