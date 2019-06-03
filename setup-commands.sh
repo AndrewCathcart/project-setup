@@ -2,6 +2,7 @@
 
 function create_project() {
     cd
+    pipenv shell
     python3 create_project.py $1 $2 $3
     cd /Users/andrew.cathcart/dev/python/
     git init
