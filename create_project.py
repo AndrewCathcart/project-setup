@@ -6,10 +6,10 @@ from secrets import PERSONAL_ACCESS_TOKEN
 # path of the project folder you'd like to create the project in.
 path = "/Users/andrew.cathcart/dev/python/"
 
-# specify username or personal access token generated at https://github.com/settings/tokens
+# specify username & pass3ord or use personal access token generated at https://github.com/settings/tokens
 username = ""
 password = ""
-token = PERSONAL_ACCESS_TOKEN
+token = ""  # PERSONAL_ACCESS_TOKEN
 
 
 def create_project():
@@ -17,15 +17,19 @@ def create_project():
     project_name = str(sys.argv[1])
     full_project_path = path + project_name
 
-    # g = Github(username, password)
-    g = Github(token)
-    os.makedirs(full_project_path)
+    if token:
+        g = Github(token)
+    elif username and password:
+        g = Github(username, password)
+    else:
+        print("Please specify either an access token or username and password in create_project.py")
+        return 0
 
+    os.makedirs(full_project_path)
     repo = g.get_user().create_repo(project_name)
 
     print("Successfully created a project at", full_project_path)
-    print("Successfully created a repository named",
-          project_name, "for Github account", username)
+    print("Successfully created a repository named", project_name)
 
 
 if __name__ == "__main__":
