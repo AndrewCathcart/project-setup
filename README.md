@@ -1,5 +1,5 @@
 # Development
-This project is built using [Python](https://www.python.org/). It uses pipenv for managing dependencies.
+This project is built using [Python3](https://www.python.org/download/releases/3.0/). It uses pipenv for managing dependencies.
 
 # Installation
 `git clone "git@github.com:AndrewCathcart/project-setup.git"`
