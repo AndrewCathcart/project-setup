@@ -5,9 +5,9 @@ function create_project() {
     cd "$INSTALLATION_PATH"
 
     pipenv run python3 create_project.py $1
-    PROJECT_DIRECTORY="/Users/andrew.cathcart/dev/python/$1"
-    if [ -d "$PROJECT_DIRECTORY" ]; then
-        cd "$PROJECT_DIRECTORY"
+    PROJECT_PATHY="/Users/andrew.cathcart/dev/python/$1"
+    if [ -d "$PROJECT_PATH" ]; then
+        cd "$PROJECT_PATH"
         else
         echo "Invalid Directory"
         return 0
