@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function create_project() {
-    INSTALLATION_PATH = "/Users/andrew.cathcart/dev/python/project-setup"
+    INSTALLATION_PATH="/Users/andrew.cathcart/dev/python/project-setup"
     cd "$INSTALLATION_PATH"
 
     pipenv run python3 create_project.py $1
