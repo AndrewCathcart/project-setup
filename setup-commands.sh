@@ -5,14 +5,14 @@ function create_project() {
     cd "$INSTALLATION_PATH"
 
     pipenv run python3 create_project.py $1
-    DIRECTORY="/Users/andrew.cathcart/dev/python/$1"
-    if [ -d "$DIRECTORY" ]; then
-        cd "$DIRECTORY"
+    PROJECT_DIRECTORY="/Users/andrew.cathcart/dev/python/$1"
+    if [ -d "$PROJECT_DIRECTORY" ]; then
+        cd "$PROJECT_DIRECTORY"
         else
         echo "Invalid Directory"
         return 0
     fi
-    
+
     git init
     git remote add origin git@github.com:AndrewCathcart/$1.git
     touch README.md
