@@ -16,7 +16,9 @@ It creates a project folder at the specified destination, creates a git reposito
 
 `pipenv install` (or `pip install pipenv` followed by `pipenv install` if you don't already have pipenv)
 
-navigate to `setup-commands.sh` and make sure to alter the location of your workspace (change `cd /Users/andrew.cathcart/dev/python/$1` to e.g. `cd /Users/JoeBloggs/Projects/Python Projects/$1`)
+navigate to `setup-commands.sh` and make sure to change the `INSTALLATION_PATH` and `PROJECT_PATH` variables. 
+- INSTALLATION_PATH is, intuitively, where you cloned the repository to.
+- PROJECT_PATH is the desired location to store your new project folder in, e.g. `/Users/JoeBloggs/Projects/Python Projects/$1` making sure to keep the bash variable $1 at the end of the file
 
 Source the bash script for ease of use, e.g. add `source /Users/andrew.cathcart/dev/python/project-setup/setup-commands.sh` to your .bashrc or .zshrc profile & reload the terminal
 
