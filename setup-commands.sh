@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function create_project() {
     INSTALLATION_PATH="/Users/andrew.cathcart/dev/python/project-setup"
