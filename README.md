@@ -5,7 +5,7 @@ This project is built using [Python3](https://www.python.org/download/releases/3
 
 It uses [Pipenv](https://docs.pipenv.org/en/latest/) for managing dependencies.
 
-It currently only supports MacOS.
+Doesn't support Windows.
 
 It creates a project folder at the specified destination, creates a git repository with the project name, sets the upstream, commits a README.md & finally opens the project in VSCode.
 
