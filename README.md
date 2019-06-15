@@ -11,6 +11,7 @@ It;
 - clones the Github repo into the project folder
 - installs autopep8 through pipenv
 - creates an empty README.md
+- performs the initial commit of these files
 - finally opens the project in VSCode.
 
 ## Installation
