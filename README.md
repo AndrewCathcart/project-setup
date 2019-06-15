@@ -5,7 +5,13 @@ This project is built using [Python3](https://www.python.org/download/releases/3
 
 It uses [Pipenv](https://docs.pipenv.org/en/latest/) for managing dependencies.
 
-It creates a project folder at the specified destination, creates a git repository with the project name, sets the upstream, installs autopep8 through pipenv, commits a README.md, Pipfile & Pipefile.lock before finally opens the project in VSCode.
+It; 
+- creates a project folder at the specified destination
+- creates a repo on Github
+- clones the Github repo into the project folder
+- installs autopep8 through pipenv
+- creates an empty README.md
+- finally opens the project in VSCode.
 
 ## Installation
 `git clone "git@github.com:AndrewCathcart/project-setup.git"`
@@ -28,3 +34,7 @@ Otherwise simply alter the username & password string inside create_project.py
 
 ## Usage
 `create_project <project_name>`
+
+## To-do
+- Add a proper .gitignore
+- Add commonly used text to the README that gets created.
