@@ -8,9 +8,9 @@ It uses [Pipenv](https://docs.pipenv.org/en/latest/) for managing dependencies.
 It; 
 - creates a project folder at the specified destination
 - creates a repo on Github
-- clones the Github repo into the project folder
+- sets the origin
 - installs autopep8 through pipenv
-- creates an empty README.md
+- creates an empty README.md & .gitignore
 - performs the initial commit of these files
 - finally opens the project in VSCode.
 
