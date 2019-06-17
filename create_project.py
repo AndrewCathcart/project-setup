@@ -2,13 +2,15 @@ import sys
 import os
 from github import Github
 from secrets import PERSONAL_ACCESS_TOKEN
+from secrets import USERNAME
+from secrets import PASSWORD
 
 # path of the project folder you'd like to create the project in.
 path = "/Users/andrew.cathcart/dev/python/"
 
-# specify username & pass3ord or use personal access token generated at https://github.com/settings/tokens
-username = ""
-password = ""
+# specify username & password or use personal access token generated at https://github.com/settings/tokens
+username = USERNAME
+password = PASSWORD
 token = PERSONAL_ACCESS_TOKEN
 
 
