@@ -16,6 +16,7 @@ function create_project() {
     git init
     git remote add origin git@github.com:AndrewCathcart/$1.git
     touch README.md
+    touch .gitignore
     pipenv install autopep8
     git add .
     git commit -m "Initial commit"
