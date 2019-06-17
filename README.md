@@ -21,20 +21,22 @@ This script;
 
 `pipenv install` (or `pip install pipenv` followed by `pipenv install` if you don't already have pipenv)
 
-navigate to `setup-commands.sh` and make sure to change the `INSTALLATION_PATH` and `PROJECT_PATH` variables. 
+Navigate to `setup-commands.sh` and make sure to change the `INSTALLATION_PATH` and `PROJECT_PATH` variables. 
 - INSTALLATION_PATH is, intuitively, where you cloned the repository to.
 - PROJECT_PATH is the desired location to store your new project folder in, e.g. `/Users/JoeBloggs/Projects/Python Projects/$1` making sure to keep the bash variable $1 at the end of the string
 
-navigate to `create_project.py`
+Create a secrets.py inside the project-setup folder.
+
+Navigate to `create_project.py`
 - Change the path variable to where you'd like your projects to live e.g. `path = /Users/JoeBloggs/Projects/Python Projects/`
-- create a secrets.py inside the project-setup folder
+create a secrets.py inside the project-setup folder
 
 If you have Two Factor Authentication setup on your Github account you'll need to;
-- generate an access token for the desired account at https://github.com/settings/tokens 
-- store the above token in a string named PERSONAL_ACCESS_TOKEN inside secrets.py
+- Generate an access token for the desired account at https://github.com/settings/tokens 
+- Store the above token in a string named PERSONAL_ACCESS_TOKEN inside secrets.py
 
 If you do not have Two Factor Authentication setup;
-- simply add USERNAME and PASSWORD strings to a secrets.py
+- Simply add USERNAME and PASSWORD strings to a secrets.py
 
 Finally source or alias the bash script for ease of use;
 - add `source /Users/andrew.cathcart/dev/python/project-setup/setup-commands.sh` to your .bashrc or .zshrc profile & reload the terminal
@@ -43,6 +45,4 @@ Finally source or alias the bash script for ease of use;
 `create_project <project_name>`
 
 ## To-do
-- Add a proper .gitignore
-- Add commonly used text to the README that gets created.
 - Add support for environment variables instead of a secrets.py
