@@ -26,15 +26,18 @@ navigate to `setup-commands.sh` and make sure to change the `INSTALLATION_PATH` 
 - PROJECT_PATH is the desired location to store your new project folder in, e.g. `/Users/JoeBloggs/Projects/Python Projects/$1` making sure to keep the bash variable $1 at the end of the string
 
 navigate to `create_project.py`
-- Change the path variable to be where you'd like your parent project folder to be e.g. `path = /Users/JoeBloggs/Projects/Python Projects/`
+- Change the path variable to where you'd like your projects to live e.g. `path = /Users/JoeBloggs/Projects/Python Projects/`
+- create a secrets.py inside the project-setup folder
 
 If you have Two Factor Authentication setup on your Github account you'll need to;
 - generate an access token for the desired account at https://github.com/settings/tokens 
-- create a secrets.py inside the project-setup folder and store the above token in a string named PERSONAL_ACCESS_TOKEN
+- store the above token in a string named PERSONAL_ACCESS_TOKEN inside secrets.py
 
-Otherwise simply alter the username & password string inside create_project.py
+If you do not have Two Factor Authentication setup;
+- simply add USERNAME and PASSWORD strings to a secrets.py
 
-Source the bash script for ease of use, e.g. add `source /Users/andrew.cathcart/dev/python/project-setup/setup-commands.sh` to your .bashrc or .zshrc profile & reload the terminal
+Finally source or alias the bash script for ease of use;
+- add `source /Users/andrew.cathcart/dev/python/project-setup/setup-commands.sh` to your .bashrc or .zshrc profile & reload the terminal
 
 ## Usage
 `create_project <project_name>`
