@@ -1,4 +1,4 @@
-# python-project-setup
+# project-setup
 
 ## Description
 This project is built using [Python3](https://www.python.org/download/releases/3.0/). 
