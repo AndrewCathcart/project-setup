@@ -5,14 +5,14 @@ This project is built using [Python3](https://www.python.org/download/releases/3
 
 It uses [Pipenv](https://docs.pipenv.org/en/latest/) for managing dependencies.
 
-This script;
-- creates a project folder at the specified destination
-- creates a repo on Github
-- sets the origin
-- installs autopep8 through pipenv
-- creates an empty README.md & .gitignore
-- performs the initial commit of these files
-- finally opens the project in VSCode.
+This script is for automating the initial steps usually completed when starting a new python project;
+- create a project folder at the specified destination
+- create a repo on Github
+- set the origin
+- install autopep8 through pipenv
+- create an empty README.md & .gitignore
+- perform the initial commit of these files
+- open the project in VSCode.
 
 ## Installation
 `git clone "git@github.com:AndrewCathcart/project-setup.git"`
