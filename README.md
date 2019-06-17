@@ -36,7 +36,7 @@ If you have Two Factor Authentication setup on your Github account you'll need t
 - Store the above token in a string named PERSONAL_ACCESS_TOKEN inside secrets.py
 
 If you do not have Two Factor Authentication setup;
-- Simply add USERNAME and PASSWORD strings to a secrets.py
+- Simply add USERNAME and PASSWORD strings to a secrets.py containing your Github login information
 
 Finally source or alias the bash script for ease of use;
 - add `source /Users/andrew.cathcart/dev/python/project-setup/setup-commands.sh` to your .bashrc or .zshrc profile & reload the terminal
