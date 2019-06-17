@@ -5,7 +5,7 @@ This project is built using [Python3](https://www.python.org/download/releases/3
 
 It uses [Pipenv](https://docs.pipenv.org/en/latest/) for managing dependencies.
 
-It; 
+This script;
 - creates a project folder at the specified destination
 - creates a repo on Github
 - sets the origin
