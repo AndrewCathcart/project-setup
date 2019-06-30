@@ -8,7 +8,7 @@ It uses [Pipenv](https://docs.pipenv.org/en/latest/) for managing dependencies.
 This script is for automating the initial steps usually completed when starting a new python project;
 - create a project folder at the specified destination
 - create a repo on Github
-- set the origin
+- add origin remote
 - install autopep8 through pipenv
 - create an empty README.md & .gitignore
 - perform the initial commit of these files
